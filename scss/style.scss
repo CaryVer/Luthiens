@@ -1,0 +1,237 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fonts*/
+
+@font-face {
+    font-family:'BlackwoodCastle';
+    src:url(../blackwood/BlackwoodCastle.woff) format('woff');
+}
+
+/*Variables*/
+$font-titulo:'BlackwoodCastle', 'Arial', 'Sans-serif';
+$fonts:'Arial', 'Sans-serif';
+$colortitulo:#faa918;
+$colorfonts:#000;
+$bg-fondo1:#ffd760;
+$bg-fondo2:#fce993;
+$bg-navbar:#000;
+$bg-navbar2: rgb(71,71,71);
+$border-radius:5px;
+$font-size:1em;
+
+
+/*Header*/
+header{
+    background-color: $bg-navbar;
+    color: $colortitulo;
+    padding: 5px;
+    border: 2px solid $bg-fondo1;
+    background-image: linear-gradient(to right,$bg-navbar, $bg-navbar2);
+    position: fixed; 
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.navbar-brand{
+    font-family: $font-titulo;
+    color: $colortitulo;
+    font-size: $font-size*1.2;
+}
+
+/*Footer*/
+footer{
+    background-color: $bg-navbar;
+    padding: 5px;
+    border: 2px solid $bg-fondo1;
+    background-image: linear-gradient(to right, $bg-navbar, $bg-navbar2);
+    h5{
+        font-size: $font-size;
+        color: $colortitulo;
+    }
+}
+
+/*Body*/
+body{
+    font-size: 10 px;
+    padding: 0.5em;
+}
+.intro,.sidebar,.nosotros,.archivo{
+    margin-top: 5em; /*puse esto porque con el header en position fixed no se ven las primeras imagenes o textos*/
+}
+.intro{
+    background-color:$bg-navbar;
+    border-radius: $border-radius;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    h1{
+        font-size: $font-size*2.5;
+        text-align: center;
+    }
+    h2{
+        color: $bg-fondo2;
+        font-size: $font-size*2;
+        text-align: center;
+    }
+}
+.carousel-item{
+    h5{
+        font-size: $font-size*2;
+        color: $colortitulo;
+        font-weight: bold;
+    }
+    p{
+        font-size: $font-size*1.3;
+        color: $colortitulo;
+        font-weight: bold;  
+    }
+}
+.destacados{
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 95%;
+    h2{
+        display: flex;
+        justify-content: center;
+        background-color: $bg-navbar;
+        color: $colortitulo;
+        padding: 20px;
+        border-radius: $border-radius;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imgprod{
+        margin-top: 20px;
+    }
+    .col:hover{
+        .imgprod{
+        transform: scale(1.2);
+        transition: all 0.5s;
+        }
+    }
+    .row {
+        img{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        }
+        h3, p{
+            padding: 1.2em;
+        }
+        .celda1{
+            background-color: $bg-fondo1;
+        }
+        .celda2{
+            background-color:$bg-fondo2;
+        }
+    }
+}
+
+#Contacto{
+    margin-top: 5em;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    width: 95%;
+    h2{
+        display: flex;
+        justify-content: center;
+        background-color: $bg-navbar;
+        color: $colortitulo;
+        padding: 20px;
+        border-radius: $border-radius;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    h4{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .whatsapp, .mail, .facebook, .instagram{
+        transform: scale(1.2);
+        transition: all 0.5s;
+    }
+}
+
+/*Productos.html*/
+.col-2{
+    background-color: $bg-navbar;
+    .sidebar{
+        margin-left: 1em;
+        position: fixed;
+        left: 1em;
+        h2{
+            color: $colortitulo;
+        }
+        .ListaProductos{
+            color: $colortitulo;
+            a{
+            color: $bg-fondo2;
+            }
+        }
+        
+    }
+}
+
+
+
+.whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.redes{
+    width: 2em;
+}
+.envio{
+    width: 2.5em;
+}
+
+/*Titulos, subtitulos, parrafos*/
+h1{
+    font-size: $font-size*2;
+    font-style: normal;
+    font-family: $font-titulo;
+    color: $colortitulo;
+    font-weight: normal;
+    letter-spacing: 6px;
+}
+h2{
+    color: $colorfonts;
+    font-family: $fonts;
+    font-size: $font-size*1.7;
+}
+h3{
+    color: $colorfonts;
+    font-family: $fonts;
+    font-size: $font-size*1.5;
+    font-weight: normal; 
+}
+h4{
+    color: $colorfonts;
+    font-family: $fonts;
+    font-size: $font-size*1.2;
+}
+h5{
+    color: $colorfonts;
+    font-family: $fonts;
+    font-size: $font-size;
+}
+p{
+    color: $colorfonts;
+    font-family: $fonts;
+}
+ul{
+    color: $colorfonts;
+    font-family: $fonts;
+}

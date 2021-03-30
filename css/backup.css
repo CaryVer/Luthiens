@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'BlackwoodCastle';
+    src:url(../blackwood/BlackwoodCastle.woff) format('woff');
+}
+
+body{
+    font-size: 10 px;
+    padding: 0.5em;
+}
+
+header,footer{
+    background-color: #000;
+    color: #faa918;
+    padding: 5px;
+    border: 2px solid rgb(255, 200, 100);
+    background-image: linear-gradient(to right, black, rgb(71, 71, 71));
+}
+
+header{
+    position: fixed; 
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.marca{
+    padding: 2em 15em 2em 0em;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.menu a{
+    color:black;
+}
+
+.boton{
+    padding: 1em;
+    background-color: rgb(255, 200, 100);
+    border-radius: 10%; 
+    transition: all 0.3s;
+}
+.boton:hover{
+    transform: scale(1.1);
+    border: 3px solid #faa918;
+    background-color:rgb(255, 200, 100);
+}
+
+.sidebar{
+    margin-left: 1em;
+}
+
+footer{
+    font-size: 1em;
+}
+
+h1{
+    font-size: 2em;
+    font-style: normal;
+    font-family: 'BlackwoodCastle', 'Arial', 'sans-serif';
+    font-weight: normal;
+    letter-spacing: 6px;
+}
+h2,h3,h4,p,ul{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+   font-size: 1.5em;
+   font-weight: normal; 
+}
+h4{
+    font-size: 1.2em;
+}
+h5{
+    font-size: 1em;
+}
+
+.intro,.sidebar,.nosotros,.archivo{
+    margin-top: 10em; /*puse esto porque con el header en position fixed no se ven las primeras imagenes o textos*/
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* .destacados-imagenes{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+} */
+.redes{
+    width: 2em;
+}
+
+.envio{
+    width: 2.5em;
+}
