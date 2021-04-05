@@ -64,7 +64,7 @@ body{
     font-size: 10 px;
     padding: 0.5em;
 }
-.intro,.sidebar,.nosotros,.archivo{
+.intro,.nosotros,.archivo{
     margin-top: 5em; /*puse esto porque con el header en position fixed no se ven las primeras imagenes o textos*/
 }
 .intro{
@@ -111,13 +111,14 @@ body{
         margin-left: 20px;
         margin-right: 20px;
     }
+   
     .imgprod{
         margin-top: 20px;
     }
     .col:hover{
         .imgprod{
-        transform: scale(1.2);
-        transition: all 0.5s;
+            transform: scale(1.2);
+            transition: all 0.5s;
         }
     }
     .row {
@@ -126,7 +127,7 @@ body{
         display: flex;
         justify-content: center;
         }
-        h3, p{
+        p{
             padding: 1.2em;
         }
         .celda1{
@@ -137,6 +138,7 @@ body{
         }
     }
 }
+
 
 #Contacto{
     margin-top: 5em;
@@ -162,27 +164,6 @@ body{
         transition: all 0.5s;
     }
 }
-
-/*Productos.html*/
-.col-2{
-    background-color: $bg-navbar;
-    .sidebar{
-        margin-left: 1em;
-        position: fixed;
-        left: 1em;
-        h2{
-            color: $colortitulo;
-        }
-        .ListaProductos{
-            color: $colortitulo;
-            a{
-            color: $bg-fondo2;
-            }
-        }
-        
-    }
-}
-
 
 
 .whatsapp{
