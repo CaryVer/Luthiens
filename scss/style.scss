@@ -12,6 +12,7 @@
     src:url(../blackwood/BlackwoodCastle.woff) format('woff');
 }
 
+
 /*Variables*/
 $font-titulo:'BlackwoodCastle', 'Arial', 'Sans-serif';
 $fonts:'Arial', 'Sans-serif';
@@ -97,6 +98,9 @@ body{
         font-weight: bold;  
     }
 }
+img{
+    margin: 0!important;
+}
 .destacados{
     margin-top: 1em;
     margin-left: 1em;
@@ -120,6 +124,11 @@ body{
             transform: scale(1.2);
             transition: all 0.5s;
         }
+    }
+    .col 
+        h3{
+        text-align: center;
+
     }
     .row {
         img{
@@ -159,10 +168,10 @@ body{
         text-decoration: underline;
         font-weight: bold;
     }
-    .whatsapp, .mail, .facebook, .instagram{
-        transform: scale(1.2);
-        transition: all 0.5s;
-    }
+    // .whatsapp, .mail, .facebook, .instagram{
+    //     transform: scale(1.2);
+    //     transition: all 0.5s;
+    // }
 }
 
 
@@ -195,8 +204,7 @@ h2{
 h3{
     color: $colorfonts;
     font-family: $fonts;
-    font-size: $font-size*1.5;
-    font-weight: normal; 
+    font-size: $font-size*1.5; 
 }
 h4{
     color: $colorfonts;

@@ -1,0 +1,213 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: "BlackwoodCastle";
+  src: url(../blackwood/BlackwoodCastle.woff) format("woff");
+}
+/*Variables*/
+/*Header*/
+header {
+  background-color: #000;
+  color: #faa918;
+  padding: 5px;
+  border: 2px solid #ffd760;
+  background-image: linear-gradient(to right, #000, #474747);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navbar-brand {
+  font-family: "BlackwoodCastle", "Arial", "Sans-serif";
+  color: #faa918;
+  font-size: 1.2em;
+}
+
+/*Footer*/
+footer {
+  background-color: #000;
+  padding: 5px;
+  border: 2px solid #ffd760;
+  background-image: linear-gradient(to right, #000, #474747);
+}
+footer h5 {
+  font-size: 1em;
+  color: #faa918;
+}
+
+/*Body*/
+body {
+  font-size: 10 px;
+  padding: 0.5em;
+}
+
+.intro, .nosotros, .archivo {
+  margin-top: 5em;
+  /*puse esto porque con el header en position fixed no se ven las primeras imagenes o textos*/
+}
+
+.intro {
+  background-color: #000;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.intro h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+.intro h2 {
+  color: #fce993;
+  font-size: 2em;
+  text-align: center;
+}
+
+.carousel-item h5 {
+  font-size: 2em;
+  color: #faa918;
+  font-weight: bold;
+}
+.carousel-item p {
+  font-size: 1.3em;
+  color: #faa918;
+  font-weight: bold;
+}
+
+img {
+  margin: 0 !important;
+}
+
+.destacados {
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 95%;
+}
+.destacados h2 {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #faa918;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.destacados .imgprod {
+  margin-top: 20px;
+}
+.destacados .col:hover .imgprod {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.destacados .col h3 {
+  text-align: center;
+}
+.destacados .row img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.destacados .row p {
+  padding: 1.2em;
+}
+.destacados .row .celda1 {
+  background-color: #ffd760;
+}
+.destacados .row .celda2 {
+  background-color: #fce993;
+}
+
+#Contacto {
+  margin-top: 5em;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  width: 95%;
+}
+#Contacto h2 {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #faa918;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#Contacto h4 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.redes {
+  width: 2em;
+}
+
+.envio {
+  width: 2.5em;
+}
+
+/*Titulos, subtitulos, parrafos*/
+h1 {
+  font-size: 2em;
+  font-style: normal;
+  font-family: "BlackwoodCastle", "Arial", "Sans-serif";
+  color: #faa918;
+  font-weight: normal;
+  letter-spacing: 6px;
+}
+
+h2 {
+  color: #000;
+  font-family: "Arial", "Sans-serif";
+  font-size: 1.7em;
+}
+
+h3 {
+  color: #000;
+  font-family: "Arial", "Sans-serif";
+  font-size: 1.5em;
+}
+
+h4 {
+  color: #000;
+  font-family: "Arial", "Sans-serif";
+  font-size: 1.2em;
+}
+
+h5 {
+  color: #000;
+  font-family: "Arial", "Sans-serif";
+  font-size: 1em;
+}
+
+p {
+  color: #000;
+  font-family: "Arial", "Sans-serif";
+}
+
+ul {
+  color: #000;
+  font-family: "Arial", "Sans-serif";
+}
+
+/*# sourceMappingURL=style.scc.map */
