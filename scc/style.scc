@@ -54,7 +54,6 @@ body {
 
 .intro, .nosotros, .archivo {
   margin-top: 5em;
-  /*puse esto porque con el header en position fixed no se ven las primeras imagenes o textos*/
 }
 
 .intro {
@@ -147,26 +146,14 @@ img {
   margin-left: 20px;
   margin-right: 20px;
 }
-#Contacto h4 {
-  text-decoration: underline;
-  font-weight: bold;
+#Contacto .container-fluid {
+  margin-left: 20px;
 }
 
-.whatsapp {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+.contact-info-text {
+  font-weight: bolder;
 }
 
-.redes {
-  width: 2em;
-}
-
-.envio {
-  width: 2.5em;
-}
-
-/*Titulos, subtitulos, parrafos*/
 h1 {
   font-size: 2em;
   font-style: normal;

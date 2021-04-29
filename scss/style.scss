@@ -66,7 +66,7 @@ body{
     padding: 0.5em;
 }
 .intro,.nosotros,.archivo{
-    margin-top: 5em; /*puse esto porque con el header en position fixed no se ven las primeras imagenes o textos*/
+    margin-top: 5em; 
 }
 .intro{
     background-color:$bg-navbar;
@@ -128,8 +128,8 @@ img{
     .col 
         h3{
         text-align: center;
-
     }
+
     .row {
         img{
         width: 50%;
@@ -149,11 +149,14 @@ img{
 }
 
 
+
+
 #Contacto{
     margin-top: 5em;
     margin-bottom: 15px;
     padding-left: 15px;
     width: 95%;
+    
     h2{
         display: flex;
         justify-content: center;
@@ -164,30 +167,16 @@ img{
         margin-left: 20px;
         margin-right: 20px;
     }
-    h4{
-        text-decoration: underline;
-        font-weight: bold;
+    .container-fluid{
+        margin-left: 20px;
     }
-    // .whatsapp, .mail, .facebook, .instagram{
-    //     transform: scale(1.2);
-    //     transition: all 0.5s;
-    // }
+}
+.contact-info-text{
+    font-weight: bolder;
 }
 
 
-.whatsapp{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-.redes{
-    width: 2em;
-}
-.envio{
-    width: 2.5em;
-}
 
-/*Titulos, subtitulos, parrafos*/
 h1{
     font-size: $font-size*2;
     font-style: normal;

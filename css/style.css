@@ -10,7 +10,7 @@
   font-family: "BlackwoodCastle";
   src: url(../blackwood/BlackwoodCastle.woff) format("woff");
 }
-/*Variables*/
+
 /*Header*/
 header {
   background-color: #000;
@@ -54,7 +54,6 @@ body {
 
 .intro, .sidebar, .nosotros, .archivo {
   margin-top: 5em;
-  /*puse esto porque con el header en position fixed no se ven las primeras imagenes o textos*/
 }
 
 .intro {
@@ -103,7 +102,7 @@ body {
   margin-right: 20px;
 }
 .destacados .imgprod {
-  margin-top: 20px;
+  margin-top: 2em;
 }
 .destacados .col:hover .imgprod {
   transform: scale(1.2);
@@ -115,6 +114,7 @@ body {
   justify-content: center;
 }
 .destacados .row h3, .destacados .row p {
+  margin-top: 2rem;
   padding: 1.2em;
 }
 .destacados .row .celda1 {
@@ -144,12 +144,8 @@ body {
   text-decoration: underline;
   font-weight: bold;
 }
-#Contacto .whatsapp, #Contacto .mail, #Contacto .facebook, #Contacto .instagram {
-  transform: scale(1.2);
-  transition: all 0.5s;
-}
 
-/*Productos.html*/
+
 .col-2 {
   background-color: #000;
 }
@@ -168,21 +164,33 @@ body {
   color: #fce993;
 }
 
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome; /* Especificamos que fuente utilizar*/
+  font-size: inherit;
+  text-rendering: auto;
+  /* webkit-font-smoothing: antialiased; */
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+.fa-facebook-square, .fa-instagram-square, .fa-envelope-square{
+  color: #faa918!important;
+   padding: 10px;
+}
+
+
 .whatsapp {
   position: fixed;
-  bottom: 0;
+  bottom: 2rem;
   right: 0;
 }
 
-.redes {
-  width: 2em;
-}
 
-.envio {
-  width: 2.5em;
-}
 
-/*Titulos, subtitulos, parrafos*/
 h1 {
   font-size: 2em;
   font-style: normal;
