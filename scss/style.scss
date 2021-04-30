@@ -139,22 +139,13 @@ img{
         p{
             padding: 1.2em;
         }
-        .celda1{
-            background-color: $bg-fondo1;
-        }
-        .celda2{
-            background-color:$bg-fondo2;
-        }
     }
 }
 
-
-
-
 #Contacto{
     margin-top: 5em;
-    margin-bottom: 15px;
-    padding-left: 15px;
+    margin-bottom: 3em;
+    padding-left: 3em;
     width: 95%;
     
     h2{
@@ -162,13 +153,13 @@ img{
         justify-content: center;
         background-color: $bg-navbar;
         color: $colortitulo;
-        padding: 20px;
+        padding: 1.5em;
         border-radius: $border-radius;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 2em;
+        margin-right: 2em;
     }
     .container-fluid{
-        margin-left: 20px;
+        margin-left: 2em;
     }
 }
 .contact-info-text{
